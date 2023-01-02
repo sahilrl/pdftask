@@ -1,57 +1,103 @@
+@import url('global.css');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    margin:0 0.8em;
-    padding: 0;
-    font-size: 80%;
-    }
   
-  header {
-    position: running(headerCenter);
+header {
     display: flex;
     justify-content: space-around;
     color: #152238;
-    background-color: #c0e6f0;
+    background-color: var(--light-blue);
     align-items: center;
+    width: 100%;
+    height: 7em;
   }
+
+.container {
+  width: 98%;
+  margin: auto;
+}
+
+.main-heading {
+  padding: 5em 0 1em 0;
+}
+
+.report-info {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 40%;
+  background-color: var(--light-blue);
+}
+.report-info > * {
+  padding: 1em 2em;
+}
+
+.report-info ul li:first-child {
+   font-weight: 900;
+   padding-bottom: 0.8em;
+}
+
   
-  footer {
-    position: running(footerCenter);
-    background-color: #00008B;
+footer {
+    background-color: var(--dark-blue);
+    height: 7em;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #fff;
   }
   
-  footer ul {
+footer ul, header ul {
     display: flex;
-    gap: 0.8em;
+    gap: 5em;
   }
+
+footer ul li span {
+  display: block;
+  margin-top: 0.5em;
+}
   
-  img {
+img {
     width: auto;
     height: 5em;
   }
   
-  #tframework, #tcondition {
-    width: 30%;
+.table-col {
+    width: 35%;
+    padding-right: 3em;
   }
   
-  thead tr {
-    background-color: #00008B;
+.table-main thead tr {
+    background-color: var(--dark-blue);
     color: #fff;
   }
   
-  table {
-    /* border-collapse: collapse; */
+.table-main {
     border-collapse: separate;
     border-spacing: 0 2em;
   }
-  /* tr { 
-    border-bottom:1px solid black;
-  } */
+ 
+.table-main th {
+  padding: 1em 0.8em;
+  text-align: left;
+}
+
+
+.inside-table {
+  width: 100%;
+  height: 5em;
+  background-color: #F0F8FF;
+  margin-bottom: 0.3em;
+  padding: 1em 0.8em;
+  display: flex;
+  align-items: center; 
+}
+
+.inside-table h3 {
+  font-size: 1em;
+}
 

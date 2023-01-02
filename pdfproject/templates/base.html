@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" media="print" href="{% static 'css/print.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
@@ -18,14 +21,14 @@
         </ul>
       </div>
     </header>
-    <footer>
-        <h1>Company Logo</h1>
-        <ul>
-            <li>Company LLC <br>www.exam.com</li>
-            <li>+7918293xxxx <br>info@company.com</li>
-        </ul>
-    </footer>
 {% block content %}
 {% endblock %}
+<footer>
+    <h1>Company Logo</h1>
+    <ul>
+        <li>Company LLC <span>www.exam.com</span></li>
+        <li>+7918293xxxx <span>info@company.com</span></li>
+    </ul>
+</footer>
 </body>
 </html>
