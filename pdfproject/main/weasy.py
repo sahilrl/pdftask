@@ -12,4 +12,4 @@ def html_to_pdf(template, css):
     Converts HTML to PDF
     """
     css = CSS(filename=css)
-    HTML(string=template).write_pdf('weasygenerated.pdf',stylesheets=[css])
+    return HTML(string=template).write_pdf(stylesheets=[css])

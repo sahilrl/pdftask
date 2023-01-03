@@ -1,9 +1,8 @@
-li {
-  list-style: none;
-}
+@import url('global.css');
 
 @page {
   margin: 5.5em 0;
+  size: portrait;
 
  @top-center {
   content: element(headerCenter);
