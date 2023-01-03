@@ -14,7 +14,11 @@
 </head>
 <body>
     <header>
+        {% if foot == 1 %}
+        <img src="http://{{ request.get_host }}/static/img/piedpiper.png">
+        {% else %}
         <img src="{% static 'img/piedpiper.png' %}">
+        {% endif %}
         <ul>
             <li>+7918293xxxx</li>
             <li>info@company.com</li>

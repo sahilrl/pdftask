@@ -13,3 +13,4 @@ def html_to_pdf(template, css):
     """
     css = CSS(filename=css)
     return HTML(string=template).write_pdf(stylesheets=[css])
+    
