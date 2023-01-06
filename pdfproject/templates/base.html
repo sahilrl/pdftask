@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href="{% static 'css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        {% if foot == 1 %}
-        <img src="http://{{ request.get_host }}/static/img/piedpiper.png">
+        {% if display_running_elements == 1 %}
+            <img src="http://{{ request.get_host }}/static/img/piedpiper.png">
         {% else %}
-        <img src="{% static 'img/piedpiper.png' %}">
+            <img src="{% static 'img/piedpiper.png' %}">
         {% endif %}
         <ul>
             <li>+7918293xxxx</li>
             <li>info@company.com</li>
         </ul>
-      </div>
     </header>
-{% if foot == 1 %}
-    <footer>
-        <h1>Company Logo</h1>
-        <ul>
-            <li>Company LLC <span>www.exam.com</span></li>
-            <li>+7918293xxxx <span>info@company.com</span></li>
-        </ul>
-    </footer>
-{% endif %}
+    
+    {% if display_running_elements == 1 %}
+        <footer>
+            <h1>Company Logo</h1>
+            <ul>
+                <li>Company LLC <span>www.exam.com</span></li>
+                <li>+7918293xxxx <span>info@company.com</span></li>
+            </ul>
+        </footer>
+    {% endif %}
 
-{% block content %} {% endblock %}
+    {% block content %} {% endblock %}
 
-{% if foot == 0 %}
-    <footer>
-        <h1>Company Logo</h1>
-        <ul>
-            <li>Company LLC <span>www.exam.com</span></li>
-            <li>+7918293xxxx <span>info@company.com</span></li>
-        </ul>
-    </footer>
-{% endif %}
+    {% if display_running_elements == 0 %}
+        <footer>
+            <h1>Company Logo</h1>
+            <ul>
+                <li>Company LLC <span>www.exam.com</span></li>
+                <li>+7918293xxxx <span>info@company.com</span></li>
+            </ul>
+        </footer>
+    {% endif %}
 
 </body>
+
 </html>

@@ -31,30 +31,39 @@
     </div>
 
     <table class="table-main">
-    <thead>
-        <tr>
-            <th>Tax / premiums</th>
-            <th>Tax benefit</th>
-            <th clas="table-col">Tax benefit conditions</th>
-            <th class="table-col">Regulatory framework</th>
-        </tr>
-    </thead>
-    
-    <div class="inside-table"><h3>Corporate Tax System</h3></div>
-    <div class="inside-table"><h3>WoollooMooloo Wharf Region</h3></div>
-    {% with ''|center:n as range %}
-    {% for _ in range %}
+        <thead>
+            <tr>
+                <th>Tax / premiums</th>
+                <th>Tax benefit</th>
+                <th clas="table-col">Tax benefit conditions</th>
+                <th class="table-col">Regulatory framework</th>
+            </tr>
+        </thead>
 
-    <tr>
-        <td id="tax">FRCO profit and loss</td>
-        <td id="tbenefit">pop {{ forloop.counter }}%</td>
-        <td id="tcondition" class="table-col">Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer 
-            Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer 
-            Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer More than 34% xyz of xyz</td>
-        <td id="tframework" class="table-col">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</td>
-    </tr>
-    {% endfor %}
-    {% endwith %}
+        <div class="inside-table">
+            <h3>Corporate Tax System</h3>
+        </div>
+        <div class="inside-table">
+            <h3>WoollooMooloo Wharf Region</h3>
+        </div>
+        {% with ''|center:n as range %}
+            {% for _ in range %}
+
+                <tr>
+                    <td id="tax">FRCO profit and loss</td>
+                    <td id="tbenefit">pop {{ forloop.counter }}%</td>
+                    <td id="tcondition" class="table-col">Western Union Money Trasfer Western Union Money Trasfer Western Union
+                        Money Trasfer Western Union Money Trasfer Western Union Money Trasfer
+                        Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer Western Union Money
+                        Trasfer
+                        Western Union Money Trasfer Western Union Money Trasfer Western Union Money Trasfer Western Union Money
+                        Trasfer Western Union Money Trasfer More than 34% xyz of xyz</td>
+                    <td id="tframework" class="table-col">In publishing and graphic design, Lorem ipsum is a placeholder text
+                        commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful
+                        content. Lorem ipsum may be used as a placeholder before final copy is available.</td>
+                </tr>
+            {% endfor %}
+        {% endwith %}
     </table>
 </div>
-    {% endblock %}
+{% endblock %}

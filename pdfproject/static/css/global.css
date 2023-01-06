@@ -1,7 +1,7 @@
 :root {
     --light-blue: #c0e6f0;
     --dark-blue: #152238;
-    --blue :#45b6fe;
+    --blue: #45b6fe;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -9,6 +9,8 @@ li {
     list-style: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Poppins', sans-serif;
 }
