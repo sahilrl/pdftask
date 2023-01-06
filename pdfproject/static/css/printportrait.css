@@ -26,10 +26,10 @@ body {
 
 header {
   position: running(headerCenter);
-  background-color: transparent;
+  height: 0;
 }
 
 footer {
   position: running(footerCenter);
-  background-color: transparent;
+  height: 0;
 }
